@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: rgb(74, 74, 71);
+  background: linear-gradient(
+    90deg,
+    rgba(74, 74, 71, 1) 0%,
+    rgba(20, 20, 12, 1) 56%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: fixed;
+  width: 100%;
+  z-index: 40;
+}
+.kiri {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+}
+.kiri img {
+  width: 40px;
+  height: 44px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.kiri a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(229, 231, 235);
+  font-size: 15px;
+}
+
+.kiri a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  margin-left: 22px;
+}
+.kanan {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.kanan img {
+  width: 20px; /* Sesuaikan ukuran gambar */
+  margin-right: 10px; /* Jarak antara gambar dan input */
+}
+
+.kanan input {
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid rgb(33, 34, 34);
+  height: 20px;
+  width: 50.312px;
+  padding: 8px 16px 8px 30px;
+  background-image: url("cari.png");
+  background-size: 20px;
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+.kanan input::placeholder {
+  color: white;
+  border-color: rgb(33, 34, 34);
+  font-size: 16px;
+  font-weight: 500;
+}
+.kanan input:focus {
+  outline: none;
+  border: 1px solid rgb(229, 231, 235);
+}
+
+.dropdownTranslate {
+  position: relative;
+  display: inline-block;
+  color: rgb(229, 231, 235);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.languageLabel {
+  cursor: pointer;
+  margin: 0;
+}
+
+.languageOptions {
+  display: none;
+  position: absolute;
+  top: 100%;
+  bottom: 4px;
+  right: 0px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.dropdownTranslate:hover .languageOptions {
+  display: flex;
+  flex-direction: column;
+}
+
+.languageOptions button {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  color: rgb(229, 231, 235);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+}
+
+.languageOptions button:hover {
+  background-color: rgba(205, 197, 197, 0.75);
+  color: black;
+}
+
+.languageOptions button:focus {
+  outline: none;
+}
+
+.languageOptions button:active {
+  background-color: #e6e6e6;
+}

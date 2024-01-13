@@ -1,0 +1,13 @@
+.main {
+  width: 100%;
+  height: 3500px;
+  background: rgb(210, 210, 197);
+  background: linear-gradient(
+    90deg,
+    rgba(210, 210, 197, 1) 0%,
+    rgba(120, 120, 112, 1) 45%,
+    rgba(33, 33, 33, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+}
