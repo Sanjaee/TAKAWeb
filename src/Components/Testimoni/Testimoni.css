@@ -1,0 +1,59 @@
+.testimoni_container {
+  margin-top: 200px;
+}
+.testimoni_grid {
+  min-width: 320px;
+}
+.testimoni_slider {
+  max-width: 1024px;
+}
+.testimoni_card {
+  height: 320px;
+
+  color: white;
+}
+.card1 {
+  border-radius: 15px;
+  padding: 24px;
+  width: 305px;
+  height: 170px;
+  background-color: rgb(39, 36, 45);
+  margin-bottom: 20px;
+}
+.content_1 h3 {
+  font-weight: 700;
+  font-size: 14px;
+}
+.content_1 p {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 12px;
+}
+.content_2 {
+  font-size: 12px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card2 {
+  font-size: 14px;
+  width: 305px;
+  height: 40px;
+  background-color: rgb(39, 36, 45);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.rating {
+  color: gold;
+}
+/* Add this CSS to your Testimoni.css or another relevant CSS file */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}

@@ -4,5 +4,6 @@
 @tailwind utilities;
 
 div {
+  overflow: none;
   font-family: "Roboto", sans-serif;
 }

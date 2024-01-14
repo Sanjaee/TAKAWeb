@@ -8,17 +8,12 @@
   display: flex;
   justify-content: space-between;
   height: 60px;
-  background: rgb(74, 74, 71);
-  background: linear-gradient(
-    90deg,
-    rgba(74, 74, 71, 1) 0%,
-    rgba(20, 20, 12, 1) 56%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: rgba(0, 0, 0, 0.75); /* Ubah nilai alpha di sini */
   position: fixed;
   width: 100%;
   z-index: 40;
 }
+
 .kiri {
   display: flex;
   align-items: center;
@@ -53,7 +48,7 @@ nav {
 .kanan {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 .kanan img {
@@ -65,8 +60,8 @@ nav {
   border-radius: 5px;
   background-color: transparent;
   border: 1px solid rgb(33, 34, 34);
-  height: 20px;
-  width: 50.312px;
+  height: 35px;
+  width: 100.312px;
   padding: 8px 16px 8px 30px;
   background-image: url("cari.png");
   background-size: 20px;
