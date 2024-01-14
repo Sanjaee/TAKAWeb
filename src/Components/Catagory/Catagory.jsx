@@ -21,7 +21,7 @@ export const Catagory = () => {
     return () => {
       unsubscribe();
     };
-  }, []); // No dependencies, runs once
+  }, []);
 
   return (
     <div className="catagory">
