@@ -11,7 +11,7 @@
   width: 1007px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   margin: 10px;
 }
 
@@ -21,32 +21,45 @@
   margin-top: 30px;
   margin-right: 10px;
 }
-
+.btn_catagory button.active {
+  transition: background-color 0.3s ease;
+  color: rgb(139, 130, 155);
+  background-color: yellow;
+  border: none;
+  font-size: 14px;
+  /* Add any other styles you want for the active state */
+}
+.btn_catagory button.active:hover {
+  color: rgb(139, 130, 155);
+  background-color: rgb(211, 211, 3);
+}
 .btn_catagory button {
   /* Sesuaikan gaya tombol */
   color: rgb(229, 231, 235);
   background-color: transparent;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   border: 1px solid black;
   border-radius: 50px;
   padding: 8px 16px;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .btn_catagory button:hover {
-  /* Sesuaikan warna saat tombol dihover */
-  color: rgb(66, 66, 66);
-  background-color: rgb(66, 66, 66);
+  transition: background-color 0.3s ease;
+  color: white;
+  background-color: rgb(52, 47, 60);
 }
 
 .list_catagory {
   /* Tetapkan properti flex pada container kategori */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap; /* Menangani penempatan kartu pada baris berikutnya */
   margin-top: 30px;
+  margin-left: 15px;
 }
 
 .card-container {
@@ -121,4 +134,11 @@
 .text2 {
   /* Sesuaikan properti teks keterangan */
   color: rgb(139, 130, 155);
+  font-size: 12px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
