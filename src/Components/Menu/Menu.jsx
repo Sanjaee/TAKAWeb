@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
 import "./Menu.css";
 import { db } from "../../Utils/Firebase";
+import { Link } from "react-router-dom";
 
 export const Menu = () => {
   const [popularData, setpopularData] = useState([]);
@@ -29,13 +30,15 @@ export const Menu = () => {
         <h3> 🔥 POPULER</h3>
         <div className="grid">
           {popularData.map((popularItem) => (
-            <div key={popularItem.id} className="card">
-              <img src={popularItem.image} alt="" />
-              <div className="content">
-                <h3>{popularItem.title}</h3>
-                <p>{popularItem.subtitle}</p>
+            <Link key={popularItem.id} to={`/Payment/${popularItem.id}`}>
+              <div className="card">
+                <img src={popularItem.image} alt="" />
+                <div className="content">
+                  <h3>{popularItem.title}</h3>
+                  <p>{popularItem.subtitle}</p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

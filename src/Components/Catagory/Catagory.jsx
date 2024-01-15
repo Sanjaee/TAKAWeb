@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
 import { db } from "../../Utils/Firebase";
 import "./Catagory.css";
+import { Link } from "react-router-dom";
 
 export const Catagory = () => {
   const [catagoryData, setCatagoryData] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("topup"); // Set "topup" as the default category
 
   useEffect(() => {
     const catagoryCollection = collection(db, "Catagory");
@@ -69,22 +70,24 @@ export const Catagory = () => {
         </div>
         <div className="list_catagory">
           {catagoryData.map((catagoryItem) => (
-            <div key={catagoryItem.id} className="card_grid">
-              <div className="card-container">
-                <img
-                  className="card_category"
-                  src={catagoryItem.image}
-                  alt=""
-                  loading="lazy"
-                />
-                <div className="text-container">
-                  <div className="text">
-                    <p className="text1">{catagoryItem.title}</p>
-                    <p className="text2">{catagoryItem.subtitle}</p>
+            <Link key={catagoryItem.id} to={`/Payment/${catagoryItem.id}`}>
+              <div className="card_grid">
+                <div className="card-container">
+                  <img
+                    className="card_category"
+                    src={catagoryItem.image}
+                    alt=""
+                    loading="lazy"
+                  />
+                  <div className="text-container">
+                    <div className="text">
+                      <p className="text1">{catagoryItem.title}</p>
+                      <p className="text2">{catagoryItem.subtitle}</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

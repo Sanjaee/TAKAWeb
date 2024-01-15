@@ -4,11 +4,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home } from "./Pages/Home";
+import { DetailCard } from "./Pages/Payment/DetailCard";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/Payment/:id",
+    element: <DetailCard />,
   },
 ]);
 
