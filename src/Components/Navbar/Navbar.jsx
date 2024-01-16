@@ -7,22 +7,22 @@ export const Navbar = () => {
         <img src="logo.webp" alt="" />
         <nav>
           <a href="#home">
-            <img src="./home.png" alt="Home" />
+            <img src="./home.png" alt="Home" loading="lazy" />
             Beranda
           </a>
 
           <a href="#about">
-            <img src="cari.png" alt="About" />
+            <img src="cari.png" alt="About" loading="lazy" />
             Cek Transaksi
           </a>
 
           <a href="#blog">
-            <img src="kado.png" alt="Blog" />
+            <img src="kado.png" alt="Blog" loading="lazy" />
             Gift Skin
           </a>
 
           <a href="#contact">
-            <img src="kakulator.png" alt="Contact" />
+            <img src="kakulator.png" alt="Contact" loading="lazy" />
             Kalkulator
           </a>
         </nav>

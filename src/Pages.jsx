@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Home } from "./Pages/Home";
-import { DetailCard } from "./Pages/Payment/DetailCard";
+import DetailPopuler from "./Pages/Payment/DetailCard";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +12,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Payment/:id",
-    element: <DetailCard />,
+    element: <DetailPopuler />,
   },
 ]);
 
